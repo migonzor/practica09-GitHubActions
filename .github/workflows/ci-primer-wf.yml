@@ -24,5 +24,15 @@ jobs:
           import platform
           print (platform.processor())
         shell: python
+ 
+  comandos-windows:
+    runs-on: windows-latest
 
+    steps:
+     - name: PowerShell
+       run: Get-Location
+       shell: PowerShell
 
+     - name: bash
+       run: pwd
+       shell: bash
